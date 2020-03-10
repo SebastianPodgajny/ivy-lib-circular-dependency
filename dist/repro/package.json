@@ -1,0 +1,21 @@
+{
+  "name": "repro",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.5",
+    "@angular/core": "^9.0.5",
+    "tslib": "^1.10.0"
+  },
+  "main": "bundles/repro.umd.js",
+  "module": "fesm5/repro.js",
+  "es2015": "fesm2015/repro.js",
+  "esm5": "esm5/repro.js",
+  "esm2015": "esm2015/repro.js",
+  "fesm5": "fesm5/repro.js",
+  "fesm2015": "fesm2015/repro.js",
+  "typings": "repro.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}
